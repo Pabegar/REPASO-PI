@@ -1,0 +1,13 @@
+import React from 'react';
+import Card from '../Card';
+// import style from './Cards.module.css'
+
+const Cards = ({ characters }) => {
+  return (
+    <section>
+     {characters?.map(character => <Card name={character.name} image={character.image} id={character.id} key={character.id} />)}
+    </section>
+  );
+};
+
+export default Cards;
